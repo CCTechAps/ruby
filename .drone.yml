@@ -1,0 +1,9 @@
+pipeline:
+  build:
+    group: build
+    image: plugins/docker
+    repo: cctech/ruby
+    dockerfile: Dockerfile
+    tags:
+      - latest-ci
+    secrets: [ docker_username, docker_password ]
