@@ -1,4 +1,4 @@
-FROM starefossen/ruby-node:2-8-slim
+FROM starefossen/ruby-node:2-8
 
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
@@ -23,4 +23,3 @@ RUN apt-get update \
   && apt-get purge --auto-remove -y \
   && apt-get clean \
   && rm -rf /tmp/* /var/lib/apt/lists/*
-
