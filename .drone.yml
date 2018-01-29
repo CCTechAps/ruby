@@ -6,4 +6,7 @@ pipeline:
     dockerfile: Dockerfile
     tags:
       - latest-ci
+      - ${DRONE_TAG}
     secrets: [ docker_username, docker_password ]
+    when:
+      event: tag
