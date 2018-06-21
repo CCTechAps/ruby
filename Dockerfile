@@ -1,4 +1,4 @@
-FROM ruby:2.5.0
+FROM ruby:2.4.4
 
 # Add repositories
 # NodeJS
