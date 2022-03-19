@@ -2,7 +2,7 @@ FROM ruby:2.4.4
 
 # Add repositories
 # NodeJS
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 
 # Yarn
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
